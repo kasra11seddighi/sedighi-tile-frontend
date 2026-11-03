@@ -1,0 +1,37 @@
+/* src/styles/index.css */
+@import "tailwindcss";
+@import "./fonts.css";
+
+body {
+  font-family: "IRAN", sans-serif;
+}
+@theme {
+  /*
+   * رنگ‌های اصلی برند (طلایی/برنزی) که قبلاً به‌صورت هاردکد (مثلاً
+   * bg-[#c98d58]، from-[#D7B187]) توی ده‌ها فایل کامپوننت پخش و تکرار
+   * شده بودن، حالا فقط همین یک‌جا تعریف می‌شن. Tailwind v4 خودش از روی
+   * این متغیرها کلاس‌های bg-brand/text-brand/border-brand/from-brand/...
+   * رو می‌سازه (شامل پشتیبانی از modifier شفافیت مثل border-brand/60).
+   * برای تغییر پالت برند در آینده، فقط کافیه همین ۵ خط عوض بشه.
+   */
+  --color-brand: #c98d58;
+  --color-brand-light: #d6a26c;
+  --color-brand-gradient-from: #d7b187;
+  --color-brand-gradient-via: #c8925a;
+  --color-brand-gradient-to: #8f5b2e;
+
+  /* قبلاً "--animate-[#fade-in]" بود که سینتکس نامعتبری برای Tailwind v4
+     است (نباید داخل نام متغیر کروشه/هش باشه) و همین باعث می‌شد کلاس
+     animate-fade-in اصلاً ساخته نشه؛ چون هیچ‌جای پروژه هم استفاده نشده
+     بود، تا الان بی‌سروصدا بی‌اثر مونده بود. */
+  --animate-fade-in: fadeIn 0.4s ease-in-out forwards;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

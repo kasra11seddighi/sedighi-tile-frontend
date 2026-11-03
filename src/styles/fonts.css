@@ -1,0 +1,49 @@
+/* src/styles/fonts.css */
+
+@font-face {
+  font-family: "IRAN";
+  src:
+    url("../assets/IRAN Family Typeface/03 webfonts/woff2/IRAN.woff2")
+      format("woff2"),
+    url("../assets/IRAN Family Typeface/03 webfonts/woff/IRAN.woff")
+      format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IRAN";
+  src:
+    url("../assets/IRAN Family Typeface/03 webfonts/woff2/IRAN_SemiBold.woff2")
+      format("woff2"),
+    url("../assets/IRAN Family Typeface/03 webfonts/woff/IRAN_SemiBold.woff")
+      format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IRAN";
+  src:
+    url("../assets/IRAN Family Typeface/03 webfonts/woff2/IRANBold.woff2")
+      format("woff2"),
+    url("../assets/IRAN Family Typeface/03 webfonts/woff/IRANBold.woff")
+      format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IRAN";
+  src:
+    url("../assets/IRAN Family Typeface/03 webfonts/woff2/IRANBlack.woff2")
+      format("woff2"),
+    url("../assets/IRAN Family Typeface/03 webfonts/woff/IRANBlack.woff")
+      format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
