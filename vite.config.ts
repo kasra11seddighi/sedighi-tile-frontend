@@ -4,6 +4,8 @@ import babel from "@rolldown/plugin-babel";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
+  base: "/sedighi-tile-frontend/",
+
   plugins: [
     react(),
 
@@ -13,8 +15,4 @@ export default defineConfig({
 
     tailwindcss(),
   ],
-
-  // تنظیمات Vitest (اجرا با «npm run test» یا «npm run test:watch»).
-  // چون Vitest از همون پایپ‌لاین Vite (پلاگین React، Tailwind و...) استفاده
-  // می‌کنه، تنظیم جدا یا فایل کانفیگ اضافه لازم نیست — همین‌جا کافیه.
 });
